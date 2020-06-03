@@ -1,0 +1,201 @@
+
+ini hasil rancangan kami
+=========================================
+
+Monopoly -> Main class
+Player -> Pemain
+Asset :
+|-- Komplek : 
+	1. public ArrayList<Negara> list_negara;
+|---- Negara : 
+      1. public double harga_1_rumah;
+      2. public double harga_2_rumah;
+      3. public double harga_3_rumah;
+      4. public double harga_1_hotel;
+      5. public char index_komplek;
+|-- Perusahaan (extend only)
+|-- Sarana Transportasi : 
+    1. public int satu_stasiun;
+    2. public int dua_stasiun;
+    3. public int tiga_stasiun;
+    4. public int empat_stasiun;
+
+Class yang ada : 
+- Asset
+- Dana Umum
+- Kesempatan
+- Komplek
+- Main
+- Monopoly
+- Negara
+- Perusahaan
+- Player
+- Sarana Transportasi
+
+
+Jadi pertama tama, kita munculkan dulu kocok dadu, munculkan semua total kocok dadu 
+munculkan dimana tempat kita berhenti kemudian karena baru mengocok 1 kali maka pilihan 
+untuk beli dan jual belum tersedia, apabila player sudah memutar 1 kali putaran, maka player dapat
+membeli dan menjual, menjual atau sewa akan tersedia apabila asset yang diinjak player sudah 
+dimiliki player lain
+
+- apabila 
+- keliling 1 kali putaran
+
+Negara Indonesia, Malaysia, Singapura, Vietnam, Amerika Serikat, Afrika, Kutub Utara, Kutub Selatan;
+Perusahaan perusahaan_listrik, perusahaan_internet;
+SaranaTransportasi stasiun_bandung;
+
+1. check dulu pemilik dari asset yang diinjek oleh kita
+2. check siapa pemilik dari asset
+3. punya uang atau engga? jika punya uang, maka bayar sesuai harga sewa asset. Jika tidak punya uang, maka player dapat menjual asset yang mereka miliki
+
+Kelompok 7 :
+1. Annisa Puspitasari: 
+  - Multiplayer
+   - Menampilkan asset setiap pemain
+   - Kesempatan & Dana Umum & Melaksanakan Perintah
+2. Sri Nuraeni: 
+   - Dapat uang melewati start
+   - Kocok Dadu, Berpindah
+   - Beli Asset, Jual Asset
+3. Rahma Gustianingsih: 
+     - Menginjak Lahan Orang Lain, Pajak, & Bayar.
+   -Lihat Asset termasuk Uang
+
+
+1. asset bisa dijual ga?
+2. uang cukup untuk membeli atau tidak?
+3. asset udah dimiliki player lain?
+
+
+output dari program kami:
+P.S: untuk mem-presentasikan kodingannya, sekaligus nanti beserta file ppt-nya dan penjelasan tiap syntax yg telah kami pelajari
+
+============ Welcome to Monopoli Game ===============
+Player 1 : "sri"
+Player 2 : "nisa"
+Player 3 : "rahma"
+Player 4 : "bastian"
+================= LETS PLAY THIS GAME ===============
+Sekarang Bagian sri
+Dadu 1 = 3
+Dadu 2 = 4
+Total dadu adalah 7
+=====================================================
+sri berada di petak Afrika
+Apakah anda ingin membeli Afrika? (true/false) : true
+=====================================================
+sri membeli asset Afrika
+Asset Afrika sudah ditambahkan kedalam daftar Asset sri?
+=====================================================
+Apakah anda ingin menjual asset? (true/false) : true
+Asset yang mana yang akan sri jual? "Afrika"
+Afrika telah terjual
+======================================================
+Apakah anda ingin melihat asset anda? (true/false) : true
+Asset yang anda miliki adalah :
+1. Singapore
+2. Blablabla
+----------------------------------------
+Total uang anda sebesar = Rp.250.000,00
+----------------------------------------
+======================================================
+Sekarang bagian nisa
+Dadu 1 = 5
+Dadu 2 = 3
+Total dadu adalah 8
+======================================================
+// Apabila bisa membayar sewa
+Anda menginjak asset milik sri yaitu Singapore
+Anda harus membayar sewa sebesar Rp.10.000,00
+Apakah anda ingin membayar sewa? (true/false) : true
+Anda sudah membayar sewa kepada sri sebesar Rp.10.000,00
+======================================================
+// Apabila player tidak memiliki uang untuk membayar sewa
+Anda tidak memiliki uang yang cukup untuk membayar sewa asset yang anda injak
+----------------------------------------
+Total uang anda sebesar = Rp.250.000,00
+----------------------------------------
+Anda harus menjual asset yang anda miliki untuk membayar sewa
+Asset anda : 
+1. koreainajah
+2. koreainajah
+Asset mana yang akan anda jual? "koreainajah"
+Asset anda sudah dijual untuk membayar sewa asset yang anda injak
+----------------------------------------
+Total uang anda sebesar = Rp.250.000,00
+----------------------------------------
+=======================================================
+// Apabila player tidak memiliki uang dan asset
+Anda sudah bangkrut karena tidak dapat membayar sewa asset atau pun menjual asset anda
+=======================================================
+Sekarang bagian bastian
+Dadu 1 = 4
+Dadu 2 = 2
+Total Dadu adalah 6
+=======================================================
+// Anda menginjak petak Dana Umum
+Anda menginjak petak Dana Umum
+Isi perintah Dana Umum :
+"Maju sampai start"
+Player menginjak Start
+========================================================
+Sekarang bagian rahma
+Dadu 1 = 3
+Dadu 2 = 4
+Total adalah 7
+========================================================
+// saat pemain menginjak penjara
+Anda menginjak Petak masuk Penjara
+Pilih action untuk keluar penjara :
+1. Kocok Dadu 
+2. Bayar
+Pilih action untuk dilakukan : 1
+Dadu 1 = 3
+Dadu 2 = 2
+Dadu 1 dan Dadu 2 tidak sama, maka anda harus menunggu giliran selanjutnya
+=======================================================
+Anda menginjak Petak masuk Penjara
+Pilih action untuk keluar penjara :
+1. Kocok Dadu 
+2. Bayar
+Pilih action untuk dilakukan : 2
+Anda harus membayar sebesar Rp.20.000,00
+Anda sudah keluar penjara
+=======================================================
+Sekarang bagian bastian
+Dadu 1 = 4
+Dadu 2 = 3
+Total Dadu adalah 7
+=======================================================
+// Pada saat player menginjak parkir bebas
+Pilih action yang akan digunakan :
+1. Ambil uang ditengah (Rp.100.000,00)
+2. Pergi kemana saja
+Action yang dipilih : 1
+Anda sudah mengambil uang ditengah sebesar Rp.100.000,00
+----------------------------------------
+Total uang anda sebesar = Rp.230.000,00
+---------------------------------------- 
+// jika action yang dipilih 2
+Action yang dipilih : 2
+Petak monopoli :
+1. asdjnasdj
+2. asidijhbjdifj
+3. asdjnjfwef
+4. jnlaksduiwefi
+Petak yang anda pilih : "asdklnjui"
+Anda berada di petak askdnjasjdn
+======================================================
+Sekarang bagian sri
+Dadu 1 = 6
+Dadu 2 = 6
+Total Dadu adalah 12
+DOUBLE!!!!!!!!!!!!!!
+======================================================
+// Kembali ke pilihan awal lalu
+Dadu 1 = 4
+Dadu 2 = 4
+Total Dadu adalah 8
+DOUBLE!!!!!!!!!!!!

@@ -1,0 +1,3 @@
+class Kesempatan extends DanaUmum {
+
+}
